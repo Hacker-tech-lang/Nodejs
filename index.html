@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website to GitHub App</title>
+</head>
+<body>
+    <h1>Create a Website and Upload to GitHub</h1>
+    <form id="websiteForm">
+        <label for="repoName">Repository Name:</label><br>
+        <input type="text" id="repoName" required><br><br>
+        
+        <label for="htmlContent">HTML Content:</label><br>
+        <textarea id="htmlContent" rows="10" cols="50" required></textarea><br><br>
+
+        <label for="cssContent">CSS Content:</label><br>
+        <textarea id="cssContent" rows="10" cols="50"></textarea><br><br>
+
+        <label for="jsContent">JavaScript Content:</label><br>
+        <textarea id="jsContent" rows="10" cols="50"></textarea><br><br>
+
+        <label for="authToken">GitHub Token:</label><br>
+        <input type="password" id="authToken" required><br><br>
+
+        <button type="submit">Create Website on GitHub</button>
+    </form>
+
+    <p id="status"></p>
+
+    <script src="app.js"></script>
+</body>
+</html>
